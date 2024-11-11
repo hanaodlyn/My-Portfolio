@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://kit.fontawesome.com/b9cba678d1.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">MY PORTOFOLIO</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skill">Skill</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">MY PORTOFOLIO</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="asset/pp.png" alt="Hana profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="hana">Hana Odlyn Fredecia</h1>
+        <p class="section__text__p2">Undergraduate Student of Information Systems at 
+          Binus University</p>
+        <div class="btn-container">
+          <a href="CV Hana Odlyn Fredecia.pdf">
+            <button class="btn btn-color-2">
+              Download CV
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="asset/about me.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="asset/sma 36.png"
+                alt="Education"
+                class="icon"
+              />
+              <h3>SMAN 36 Jakarta</h3>
+              <p>MIPA <br />2019-2022</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="asset/binus univ.png"
+                alt="Education"
+                class="icon"
+              />
+              <h3>Bina Nusantara University</h3>
+              <p>Information System<br />2022-present</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a 5th-semester student with a deep passion for front-end development, UI/UX design, and a strong entrepreneurial spirit. My goal is to create impactful solutions that not only drive business success but also contribute positively to the environment. With a focus on building intuitive, user-friendly interfaces, I aim to enhance user experiences while delivering innovative solutions that align with sustainability. Driven by a creative mindset and a commitment to continuous learning, I am always exploring new ways to integrate my skills in technology and entrepreneurship. I thrive on challenges that push me to grow both personally and professionally, and I am dedicated to making a meaningful impact through my work.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      /> -->
+    </section>
+    <section id="experience">
+      <section id="experience">
+      <h1 class="title">Experience</h1>
+      <div class="experience-container">
+        <div class="experience-card">
+            <h3>Rohkris (Rohani Kristen) SMAN 36 Jakarta</h3>
+            <p id="masa"><span>2020 - 2021</span></p>
+            <p><strong>Public Relations</strong></p>
+            <p>Create a good image of the organization, communicate all forms of information about the organization, announcements, or future activities to students.</p>
+            
+            <p id="masa"><span>2021 - 2022</span></p>
+            <p><strong>Treasurer</strong></p>
+            <p>Responsible for managing and recording the money coming in and out of Rohkris.</p>
+        </div>
+
+        <div class="experience-card">
+            <h3>Bina Nusantara Computer Club</h3>
+            <p id="masa"><span>Sep 2022 - 2023</span></p>
+            <p><strong>Member (Java)</strong></p>
+            <p>Learn Java programming language with other members.</p>
+        </div>
+
+        <div class="experience-card">
+            <h3>Bersama Dalam Musik</h3>
+            <p id="masa"><span>2023 - 2024</span></p>
+            <p><strong>Talent (Violinist)</strong></p>
+            <p>Fill in for music events on and off campus with other talents.</p>
+        </div>
+      <!-- <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      /> -->
+    </section>
+    <section id="skill">
+      <div class="container">
+        <div class="skill-title">
+            <h1>Skill</h1>
+        </div>
+        <div class="skills-box">
+            <ul class="skills-list">
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <ul class="skills-list">
+                <li>MySQL</li>
+                <li>UI/UX</li>
+                <li>Figma</li>
+                <li>Teamwork</li>
+            </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="project">
+      <h1 class="title">Projects</h1>
+      <div class="list">
+        <a href="https://www.canva.com/design/DAGTMgOkxtA/V0Kb-HqUcKnvdMI0aVlkhg/edit?utm_content=DAGTMgOkxtA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+        <div class="item">
+          <img src="logo porto/3.png">
+          <div class="play">
+            <span class="fa_tap">
+              <div class="tap">tap to see details</div>
+            </span>
+          </div>
+          <h4>VolunUp</h4>
+          <p>User Experience Research and Design</p>
+        </div>
+        </a>
+
+        <a href="https://www.canva.com/design/DAGTO6V6_QY/ZSzCNa_1cXMiMxajlr8_zA/edit?utm_content=DAGTO6V6_QY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+          <div class="item">
+            <img src="logo porto/2.png">
+            <div class="play">
+              <span class="fa_tap">
+                <div class="tap">tap to see details</div>
+              </span>
+            </div>
+            <h4>SeRuput Teh</h4>
+            <p>Business Application Development</p>
+          </div>  
+        </a>
+
+        <a href="https://www.canva.com/design/DAGTkUEry1s/aLxn9qx2c_ptVN5l2EHVGg/edit?utm_content=DAGTkUEry1s&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+          <div class="item">
+            <img src="logo porto/4.png">
+            <div class="play">
+              <span class="fa_tap">
+                <div class="tap">tap to see details</div>
+              </span>
+            </div>
+            <h4>Sistem Informasi Lappies</h4>
+            <p>Advanced Information System Analysis and Design</p>
+          </div>
+        </a>
+
+        <a href="https://www.canva.com/design/DAGTkkRzQP4/521DND9iYWzAdeIUHqUiBQ/edit?utm_content=DAGTkkRzQP4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+          <div class="item">
+            <img src="logo porto/5.png">
+            <div class="play">
+              <span class="fa_tap">
+                <div class="tap">tap to see details</div>
+              </span>
+            </div>
+            <h4>Sistem Informasi Harvesty</h4>
+            <p>Information Systems Analysis and Design</p>
+          </div>
+        </a>
+
+        <a href="https://www.canva.com/design/DAGTne7AHOE/ZyWYucOqn9hlYzjarKwbwA/edit?utm_content=DAGTne7AHOE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+          <div class="item">
+            <img src="logo porto/6.png">
+            <div class="play">
+              <span class="fa_tap">
+                <div class="tap">tap to see details</div>
+              </span>
+            </div>
+            <h4>WheelsHub</h4>
+            <p>Web Based Application Development</p>
+          </div>
+        </a>
+
+        <a href="https://www.canva.com/design/DAGTof7XnX0/vNSkoglM4DzQ9Faepup_6Q/edit?utm_content=DAGTof7XnX0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+          <div class="item">
+            <img src="logo porto/1.png">
+            <div class="play">
+              <span class="fa_tap">
+                <div class="tap">tap to see details</div>
+              </span>
+            </div>
+            <h4>Music Space</h4>
+            <p>Front-End</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="asset/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtMfzvGpMNXwqbGGjmLQwXsThQvWkQQVDlDqbBzVxGKXFJfJSjCmzDwBkhvwBPmrmmlwRvPq">hanaodlyn53@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="asset/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/hana-odlyn-fredecia-3ba59b1b3/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="whatsapp logo.svg"
+            alt="WhatsApp icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://wa.me/qr/B7H63FLTTSGPG1">+621314923615</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Hana  Odlyn Fredecia. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
